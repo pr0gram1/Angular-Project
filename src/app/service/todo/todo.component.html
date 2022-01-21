@@ -1,0 +1,20 @@
+
+<!--[@slider]-->
+<div class="row">
+    <div class="col-xs-10">
+      <app-todo-editor></app-todo-editor>
+      <hr>
+      <ul class="list-group">
+        <a
+          class="list-group-item"
+          style="cursor: pointer"
+          
+          *ngFor="let todoelement of todoelements; let i = index"
+          (click)="changeStateofEle(i)"
+        >
+          {{ todoelement.information }}
+        </a>
+      </ul>
+    </div>
+  </div>
+  
