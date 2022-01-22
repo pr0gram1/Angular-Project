@@ -1,40 +1,27 @@
-# Angular
+# AngProject
 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
 
-![alt text](https://miro.medium.com/max/2000/1*fKb9TdxSYjVzWindUWaGUg.png)
+## Development server
 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-This is a repository that contains Angular examples and a project
+## Code scaffolding
 
-## Installing Angular CLI
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Install the CLI using the npm package manager:
+## Build
 
-```bash
-npm install -g @angular/cli
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-```
-## Basic workflow
-Invoke the tool on the command line through the ng executable.
+## Running unit tests
 
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-```bash
-ng help
-ng generate --help
+## Running end-to-end tests
 
-```
-To create, build, and serve a new, basic Angular project on a development server, go to the parent directory of your new workspace use the following commands:
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
+## Further help
 
-```bash
-ng new my-first-project
-cd my-first-project
-ng serve
-
-```
-
-
-## Usage
-
-In your browser, open http://localhost:4200/ to see the new application run. When you use the ng serve command to build an application and serve it locally, the server automatically rebuilds the application and reloads the page when you change any of the source files.
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

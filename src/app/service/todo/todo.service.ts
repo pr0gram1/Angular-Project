@@ -5,11 +5,11 @@ export class TodoService {
   todoelementsChanged = new Subject<Todoelement[]>();
   changingStateEle = new Subject<number>();
   private todoelements: Todoelement[] = [
-   new Todoelement('I need to wash the car'),
-   new Todoelement('Remind yours self that you have an exam today'),
-   new Todoelement('Watch the game with friends'),
-   new Todoelement('Do some workout at 18:00'),
-   new Todoelement('Do the dishes'),
+    new Todoelement('I need to wash the car'),
+    new Todoelement('Remind yours self that you have an exam today'),
+    new Todoelement('Watch the game with friends'),
+    new Todoelement('Do some workout at 18:00'),
+    new Todoelement('Do the dishes'),
 
 
   ];

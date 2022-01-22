@@ -1,5 +1,6 @@
-import { Component, OnDestroy, OnInit} from '@angular/core';
-//trigger, state, style, transition, animate } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+//import { trigger, state, style, transition, animate } from "@angular/animations";
+
 
 import { Subscription } from 'rxjs';
 
@@ -10,8 +11,11 @@ import { TodoService } from './todo.service';
 @Component({
   selector: 'cf-todo',
   templateUrl: './todo.component.html',
-  styleUrls: ['./todo.component.scss']
+  styleUrls: ['./todo.component.scss'],
+
   /**
+   * 
+   * 
    * animations: [
       trigger('slider', [
         state('i', style({
@@ -28,7 +32,8 @@ import { TodoService } from './todo.service';
     ]),
   ]
   **/
-    
+
+
 })
 export class TodoComponent implements OnInit, OnDestroy {
   todoelements: Todoelement[];
@@ -39,7 +44,7 @@ export class TodoComponent implements OnInit, OnDestroy {
 
 
   ngOnInit(): void {
-  
+
     this.todoelements = this.todoService.getTodoelements();
     this.elementSub = this.todoService.todoelementsChanged
       .subscribe(
@@ -48,14 +53,14 @@ export class TodoComponent implements OnInit, OnDestroy {
         }
       );
   }
-   
+
   ngOnDestroy(): void {
     this.elementSub.unsubscribe();
   }
 
-  changeStateofEle(index: number){
+  changeStateofEle(index: number) {
     this.todoService.changingStateEle.next(index);
 
   }
-  
+
 }

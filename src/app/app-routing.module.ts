@@ -8,16 +8,16 @@ import { TodoEditorComponent } from './service/todo/todo-editor/todo-editor.comp
 
 const routes: Routes = [
 
-  {path: 'todo', component: TodoComponent, canActivate: [AuthGuard] },
-  {path: 'credits', component: CreditsComponent, canActivate: [AuthGuard]},
-  {path: '', component: LogCompComponent},
-  
+  { path: 'todo', component: TodoComponent, canActivate: [AuthGuard] },
+  { path: 'credits', component: CreditsComponent, canActivate: [AuthGuard] },
+  { path: '', component: LogCompComponent },
+
 
 ];
-  
+
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],     
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

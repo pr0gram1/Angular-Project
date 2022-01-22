@@ -1,8 +1,3 @@
-// Hierarchical Injector
-// AppModule - same instance of Service is available Application- wide
-// AppComponent - -//- for all Compoenents but for all services
-// Any other Component - -//- for the Component and all tis child components
-
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -19,11 +14,11 @@ import { TodoService } from './service/todo/todo.service';
 //import { ParticlesModule } from 'angular-particle';
 //import {CustomDatePipe} from './custom.datepipe';
 
-  
+
 @NgModule({
   declarations: [
     AppComponent,
-    LogCompComponent, 
+    LogCompComponent,
     TodoComponent,
     CreditsComponent,
     TodoEditorComponent
