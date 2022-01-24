@@ -24,7 +24,7 @@ export class TodoService {
     this.todoelementsChanged.next(this.todoelements.slice());
   }
 
-  addIngredients(todoelements: Todoelement[]) {
+  addTodoelements(todoelements: Todoelement[]) {
     this.todoelements.push(...todoelements);
     this.todoelementsChanged.next(this.todoelements.slice());
   }
