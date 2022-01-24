@@ -9,10 +9,6 @@ import { TodoComponent } from './service/todo/todo.component';
 import { CreditsComponent } from './service/credits/credits.component';
 import { TodoEditorComponent } from './service/todo/todo-editor/todo-editor.component';
 import { TodoService } from './service/todo/todo.service';
-//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-//import { ParticlesModule } from 'angular-particle';
-//import {CustomDatePipe} from './custom.datepipe';
 
 
 @NgModule({
@@ -23,14 +19,13 @@ import { TodoService } from './service/todo/todo.service';
     CreditsComponent,
     TodoEditorComponent
 
-    //CustomDatePipe
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
-    //BrowserAnimationsModule
-    //ParticlesModule
+   
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]
